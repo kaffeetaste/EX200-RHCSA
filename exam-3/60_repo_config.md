@@ -12,14 +12,18 @@ sudo -i
 ```
 
 1. Create the mount point and mount the iso image from /RHEL-9.iso
-```bash
-sudo mkdir /repo
-sudo mount -o loop /RHEL-9.iso /repo
+```
+mkdir /repo
+mount -o loop /RHEL-9.iso /repo
+
+Alternatively, mount persistantly via /etc/fstab
+echo "/RHEL-9.iso /repo iso9660 loop 0 0" >> /etc/fstab
+
 ```
 
 Option 1: Persistent mounting in fstab (recommended for frequent use):
 ```bash    
-$ su -c 'echo "/RHEL-9.iso /repo iso9660 loop 0 0" >> /etc/fstab'
+$ su -c '
 $ mount -a
 ```
 
