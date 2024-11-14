@@ -55,9 +55,9 @@ dnf clean all
 4. Address subscription-manager warnings (optional):
 ```bash
 # Optional for cleaning local subscription data
-$ subscription-manager clean 
-$ sudo vi /etc/yum/pluginconf.d/subscription-manager.conf
-Set enabled=0 to suppress warnings if not registered.
+subscription-manager clean 
+vi /etc/yum/pluginconf.d/subscription-manager.conf
+(set enabled=0 to suppress warnings if not registered.)
 ```
 
 6. Verify the repository:
