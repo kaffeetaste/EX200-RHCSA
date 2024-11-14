@@ -21,15 +21,16 @@ echo "/RHEL-9.iso /repo iso9660 loop 0 0" >> /etc/fstab
 ```
 
 
-3. Configure the repository:
+2. Configure the repository:
 
+```bash
     $ sudo cp -v /repo/media.repo /etc/yum.repos.d/rhel9.repo
     $ sudo chmod 644 /etc/yum.repos.d/rhel9.repo
     $ sudo vi /etc/yum.repos.d/rhel9.repo
-
+```
 
 Replace the content with:
-
+```
     [InstallMedia-BaseOS]
     name=RHEL 9 - BaseOS
     metadata_expire=-1
@@ -43,6 +44,7 @@ Replace the content with:
     gpgcheck=0
     enabled=1
     baseurl=file:///repo/AppStream/
+```
 
 
 4. Clean metadata and cache:
