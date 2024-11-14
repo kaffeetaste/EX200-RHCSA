@@ -1,10 +1,9 @@
-Repo config
+### Repo Configuration
 
-Question
+#### Question
 
 
 On ServerB, set up a local Yum/DNF repository using the /RHEL-9.iso image mounted on the /repo directory. Ensure the repository is accessible for package installation and updates, and address any potential issues with Red Hat Subscription Management registration.
-
 
 
 <details>
@@ -13,35 +12,22 @@ On ServerB, set up a local Yum/DNF repository using the /RHEL-9.iso image mounte
 Overall explanation
 
 1. Create the mount point:
-
 $ sudo mkdir /repo
-
 
 2. Mount the ISO image:
 
-
 Option 1: Persistent mounting in fstab (recommended for frequent use):
-
-    $ su -c 'echo "/RHEL-9.iso /repo iso9660 loop 0 0" >> /etc/fstab'
-    $ mount -a
-
+```bash    
+$ su -c 'echo "/RHEL-9.iso /repo iso9660 loop 0 0" >> /etc/fstab'
+$ mount -a
+```
 
 Option 2: Manual mounting for one-time or infrequent use:
-
+```bash
 $ sudo mount -o loop /RHEL-9.iso /repo
+```
 
-
-Note that
-
-    The entry specifies the mount point (/repo), the file system type (iso9660), the mount options (defaults), and the dump and file system check options (0 0).
-
-    This enables the system to automatically mount the ISO file to the specified mount point (/repo) during system boot.
-
-    If you use "iso9660 defaults," the system will apply its default options for mounting ISO9660.
-
-    If you use "iso9660 loop," it explicitly specifies the use of the loopback device for mounting the ISO image.
-
-    Both approaches are valid, but the "iso9660 loop" option is often explicitly used when dealing with ISO files to make it clear that a loopback device is involved in the mounting process.
+Both approaches are valid, but the "iso9660 loop" option is often explicitly used when dealing with ISO files to make it clear that a loopback device is involved in the mounting process.
 
 
 3. Configure the repository:
@@ -69,22 +55,19 @@ Replace the content with:
 
 
 4. Clean metadata and cache:
-
+```bash
 $ sudo dnf clean all
-
+```
 
 5. Address subscription-manager warnings (optional):
-
-$ sudo subscription-manager clean # Optional for cleaning local subscription data
-
-
+```bash
+# Optional for cleaning local subscription data
+$ sudo subscription-manager clean 
+```
 $ sudo vi /etc/yum/pluginconf.d/subscription-manager.conf
-
 Set enabled=0 to suppress warnings if not registered.
 
-
 6. Verify the repository:
-
 $ sudo dnf repolist 
 
 </details>
