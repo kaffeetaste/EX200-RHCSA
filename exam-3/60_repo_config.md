@@ -60,9 +60,10 @@ vi /etc/yum/pluginconf.d/subscription-manager.conf
 (set enabled=0 to suppress warnings if not registered.)
 ```
 
-6. Verify the repository:
-$ sudo dnf repolist 
-
+5. Verify the repository:
+```bash
+dnf repolist 
+```
 </details>
 
 
