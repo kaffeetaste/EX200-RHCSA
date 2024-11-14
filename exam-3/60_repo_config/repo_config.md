@@ -2,13 +2,6 @@ Repo config
 
 Question
 
-<hide>  
-<summary>Click me</summary>
-```bash
-test
-```
-
-</hide>  
 
 
 
