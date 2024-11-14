@@ -30,14 +30,18 @@ nmcli con mod ipv4.dns 10.2.107.201
 nmcli con mod ipv4.dns-search phrygix.wz
 nmcli con mod ipv4.method manual
 ```
+Alternatively, use nmtui
 
-3. Bring down and up again interface ens18
+
+
+3. Bring down and up again interface ens18, i.e.
+
 ```bash
 nmcli con down esn18
 nmcli con up ens18
 ```
 
-4. Verify ipv4r settings
+4. Verify ipv4 settings
 ```bash
 nmcli con show ens18 | grep ipv4
 ipv4.method:                            manual
