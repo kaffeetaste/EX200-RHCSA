@@ -24,9 +24,9 @@ echo "/RHEL-9.iso /repo iso9660 loop 0 0" >> /etc/fstab
 2. Configure the repository:
 
 ```bash
-    $ sudo cp -v /repo/media.repo /etc/yum.repos.d/rhel9.repo
-    $ sudo chmod 644 /etc/yum.repos.d/rhel9.repo
-    $ sudo vi /etc/yum.repos.d/rhel9.repo
+    cp -v /repo/media.repo /etc/yum.repos.d/rhel9.repo
+    chmod 644 /etc/yum.repos.d/rhel9.repo
+    vi /etc/yum.repos.d/rhel9.repo
 ```
 
 Replace the content with:
