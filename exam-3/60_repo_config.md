@@ -16,23 +16,9 @@ sudo -i
 mkdir /repo
 mount -o loop /RHEL-9.iso /repo
 
-Alternatively, mount persistantly via /etc/fstab
+Alternatively, mount persistantly via /etc/fstab:
 echo "/RHEL-9.iso /repo iso9660 loop 0 0" >> /etc/fstab
-
 ```
-
-Option 1: Persistent mounting in fstab (recommended for frequent use):
-```bash    
-$ su -c '
-$ mount -a
-```
-
-Option 2: Manual mounting for one-time or infrequent use:
-```bash
-$ sudo 
-```
-
-Both approaches are valid, but the "iso9660 loop" option is often explicitly used when dealing with ISO files to make it clear that a loopback device is involved in the mounting process.
 
 
 3. Configure the repository:
