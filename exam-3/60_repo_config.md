@@ -47,18 +47,18 @@ Replace the content with:
 ```
 
 
-4. Clean metadata and cache:
+3. Clean metadata and cache:
 ```bash
-$ sudo dnf clean all
+dnf clean all
 ```
 
-5. Address subscription-manager warnings (optional):
+4. Address subscription-manager warnings (optional):
 ```bash
 # Optional for cleaning local subscription data
-$ sudo subscription-manager clean 
-```
+$ subscription-manager clean 
 $ sudo vi /etc/yum/pluginconf.d/subscription-manager.conf
 Set enabled=0 to suppress warnings if not registered.
+```
 
 6. Verify the repository:
 $ sudo dnf repolist 
