@@ -6,10 +6,8 @@ On ServerB, set up a local Yum/DNF repository using the /RHEL-9.iso image mounte
 
 <details>
 
-
-Overall explanation
-
 ```bash
+ssh rhcsaB
 sudo -i
 ```
 
