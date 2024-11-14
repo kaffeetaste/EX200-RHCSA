@@ -12,7 +12,9 @@ On ServerB, set up a local Yum/DNF repository using the /RHEL-9.iso image mounte
 Overall explanation
 
 #### 1. Create the mount point:
+```bash
 $ sudo mkdir /repo
+```
 
 #### 2. Mount the ISO image:
 
