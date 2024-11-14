@@ -1,20 +1,23 @@
-### Repo Configuration
+### 60. Repo Configuration
 
 #### Question
 
-
 On ServerB, set up a local Yum/DNF repository using the /RHEL-9.iso image mounted on the /repo directory. Ensure the repository is accessible for package installation and updates, and address any potential issues with Red Hat Subscription Management registration.
-
 
 <details>
 
 
 Overall explanation
 
-1. Create the mount point:
-$ sudo mkdir /repo
+```bash
+sudo -i
+```
 
-2. Mount the ISO image:
+1. Create the mount point and mount the iso image from /RHEL-9.iso
+```bash
+sudo mkdir /repo
+sudo mount -o loop /RHEL-9.iso /repo
+```
 
 Option 1: Persistent mounting in fstab (recommended for frequent use):
 ```bash    
@@ -24,7 +27,7 @@ $ mount -a
 
 Option 2: Manual mounting for one-time or infrequent use:
 ```bash
-$ sudo mount -o loop /RHEL-9.iso /repo
+$ sudo 
 ```
 
 Both approaches are valid, but the "iso9660 loop" option is often explicitly used when dealing with ISO files to make it clear that a loopback device is involved in the mounting process.
