@@ -3,43 +3,11 @@ Repo config
 Question
 
 
+On ServerB, set up a local Yum/DNF repository using the /RHEL-9.iso image mounted on the /repo directory. Ensure the repository is accessible for package installation and updates, and address any potential issues with Red Hat Subscription Management registration.
 
 
 
 <details>
-
-```bash
-podman network create my-net
-
-podman volume create my-db-vol
-podman volume create my-app-vol
-
-podman run -d \
---name wordpress-db \
---network my-net \
--v my-db-vol:/var/lib/mysql:Z \
--e MYSQL_ROOT_PASSWORD=mypass \
--e MYSQL_PASSWORD=mypass \
--e MYSQL_DATABASE=wordpress_db \
--e MYSQL_USER=dbuser \
-docker.io/mariadb:latest
-
-podman run -d \
---name wordpress-app \
---network my-net \
--v my-app-vol:/var/www/html:Z \
--p 8004:80 \
--e WORDPRESS_DB_HOST=wordpress-db:3306 \
--e WORDPRESS_DB_NAME=wordpress_db \
--e WORDPRESS_DB_USER=dbuser \
--e WORDPRESS_DB_PASSWORD=mypass \
-docker.io/wordpress:latest
-```
-
-</details>
-
-
-On ServerB, set up a local Yum/DNF repository using the /RHEL-9.iso image mounted on the /repo directory. Ensure the repository is accessible for package installation and updates, and address any potential issues with Red Hat Subscription Management registration.
 
 
 Overall explanation
@@ -118,3 +86,10 @@ Set enabled=0 to suppress warnings if not registered.
 6. Verify the repository:
 
 $ sudo dnf repolist 
+
+</details>
+
+
+
+
+
