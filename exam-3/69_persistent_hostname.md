@@ -5,8 +5,8 @@ On ServerB, change the hostname to rhel.server.test and make it persistent.
 
 <details><summary>Solution</summary>
 
-1. To set the hostname of the system to “rhel.server.com”, run:
-```
+1. To set the hostname of the system to "rhel.server.test", run:
+```bash
 # hostnamectl set-hostname rhel.server.test
 ```
 This command will change the hostname in the “/etc/hostname” file and update the current hostname in the kernel as well. The change will take effect immediately and persist across reboots.
