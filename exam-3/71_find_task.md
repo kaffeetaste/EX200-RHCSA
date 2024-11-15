@@ -28,7 +28,7 @@ Here is what each part of the command does:
     -exec cp {} /find/rootfiles/ \;: executes the cp command to copy each file found to the /find/rootfiles directory. The curly braces {} are replaced with the name of each file found by the find command. The backslash before the semicolon is used to escape the semicolon, which is required to terminate the -exec command.
 
 3. To list the contents of the directory "/find/rootfiles/" in a long format, run:
-
+```
 # ls -l /find/rootfiles/ 
-
+```
 </details>
