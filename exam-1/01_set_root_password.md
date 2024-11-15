@@ -42,7 +42,6 @@ You've forgotten the root password for ServerA. Securely reset the root password
     Exit the chroot environment and emergency shell with two Ctrl+D key presses.
 
     The system will automatically reboot with SELinux performing a relabeling process (this might take some time).
-
     Once the reboot is complete, you should be able to log in with the newly set root password.
 
 
