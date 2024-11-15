@@ -4,7 +4,9 @@
 
 On ServerA, configure the system time to the "America/New_York" timezone.
 
+
 <details><summary>Solution</summary>
+
 
 ```
 $ ssh rhcsaA
