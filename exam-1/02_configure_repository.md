@@ -53,14 +53,14 @@ Open '/etc/yum.repos.d/rhel9.repo' in a text editor (e.g., vim).
 Replace the existing content with the following:
 
     [InstallMedia-BaseOS]
-    name=RHEL 9 - BaseOSmetadata_
+    name=RHEL 9 - BaseOSmetadata
     expire=-1
     gpgcheck=0
     enabled=1
     baseurl=file:///mnt/BaseOS/ 
      
     [InstallMedia-AppStream]
-    name=RHEL 9 - AppStreammetadata_
+    name=RHEL 9 - AppStreammetadata
     expire=-1
     gpgcheck=0
     enabled=1
@@ -91,4 +91,4 @@ List available repositories:
 # dnf repolist
 ```
 
-<details>
+</details>
