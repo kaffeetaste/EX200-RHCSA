@@ -12,7 +12,7 @@ b. The original kernel remains available and bootable on the system.
 ```
 # dnf update -y
 ```
-2. Update the kenrel pacakges:
+2. Update the kernel packages:
 ```
 # dnf update kernel -y
 ```
