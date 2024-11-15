@@ -67,8 +67,8 @@ Explanation:
     chmod g+s sets the setgid bit, making newly created files inherit the group ownership of the directory.
 
 
-To verify:
-    Use id <username> to verify user and group memberships.
+To verify:  
+    Use id <username> to verify user and group memberships.  
     Use ls -ld <directory> to view directory permissions.
 
 </details>
