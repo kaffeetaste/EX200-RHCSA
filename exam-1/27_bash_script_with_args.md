@@ -9,14 +9,15 @@ On ServerA, create a Bash script named /script.sh that outputs the second argume
 <details><summary>Solution</summary>
 
 1. Create the following script "/script.sh":
-
+```
     #!/bin/bash 
-    if [ $# -eq 2 ]; 
+    if [ $# -eq 2 ];  
       then  echo "$2 $1"
     else  
       echo "Usage: $0 argument1 argument2"  
       exit 1
     fi
+```
 
 2. Make the script executable by running:
 ```
