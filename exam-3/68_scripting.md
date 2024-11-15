@@ -12,10 +12,10 @@ c. If the argument is anything else, the script should run the command echo "unk
 
 1. To open the file “/yes-no.sh” for editing using the vim editor, run:
 
-# vim /yes-no.sh
+vim /yes-no.sh
 
 2. Add the following lines:
-
+```
     #!/bin/bash
     # check that an argument was provided or exit
     if [ -z $1 ]
@@ -38,17 +38,15 @@ c. If the argument is anything else, the script should run the command echo "unk
     *)
     echo unknown argument provided
     esac
+```
 
-3. Press Esc to switch to command mode, then type :wq followed by Enter to save and exit.
-
-4. To change the permissions of the file "yes-no.sh" to make it executable by all users (a = all, +x = add execute permission), run:
-
-# chmod a+x /yes-no.sh
+3. To change the permissions of the file "yes-no.sh" to make it executable by all users (a = all, +x = add execute permission), run:
+chmod a+x /yes-no.sh
 
 This command allows the script to be run as an executable program.
 
-5. To execute the script “/yes-no.sh” using the sh shell, run:
-
+4. To execute the script “/yes-no.sh” using the sh shell, run:
+```bash
 # sh /yes-no.sh 
-
+```
 </details>
