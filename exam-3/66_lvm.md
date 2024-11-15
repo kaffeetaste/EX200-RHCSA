@@ -115,7 +115,7 @@ lsblk
 ```
 </details>
 
-<details><summary> Details c) </summry>
+<details><summary> Details c) </summary>
 
 1. To extend the size of the logical volume “/dev/mapper/vgmyvg-lvmylv” by 500 MB and resize the file system to match the new size, run:
 ```
