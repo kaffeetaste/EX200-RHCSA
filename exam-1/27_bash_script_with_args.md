@@ -10,7 +10,8 @@ On ServerA, create a Bash script named /script.sh that outputs the second argume
 
 1. Create the following script "/script.sh":
 ```
-    #!/bin/bash 
+    #!/bin/bash
+    
     if [ $# -eq 2 ];  
       then  echo "$2 $1"
     else  
