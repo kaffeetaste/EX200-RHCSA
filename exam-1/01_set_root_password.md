@@ -45,4 +45,5 @@ You've forgotten the root password for ServerA. Securely reset the root password
 
     Once the reboot is complete, you should be able to log in with the newly set root password.
 
-    </details>
+
+</details>
