@@ -1,10 +1,10 @@
 ### 60. Repo Configuration
 
-#### Question
+#### Task
 
 On ServerB, set up a local Yum/DNF repository using the /RHEL-9.iso image mounted on the /repo directory. Ensure the repository is accessible for package installation and updates, and address any potential issues with Red Hat Subscription Management registration.
 
-<details>
+<details><summary>Solution</summary>
 
 ```bash
 ssh rhcsaB
@@ -65,8 +65,3 @@ vi /etc/yum/pluginconf.d/subscription-manager.conf
 dnf repolist 
 ```
 </details>
-
-
-
-
-
