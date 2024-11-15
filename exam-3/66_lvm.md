@@ -66,10 +66,10 @@ vgs
 ```
 </details>
 
-<details>
+<detaails>
 
 hallo
-</details>
+</detaails>
 
 
 
