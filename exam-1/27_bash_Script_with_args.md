@@ -31,7 +31,7 @@ $ ./script.sh test1 test2
 This will output "test2 test1" in the terminal.
 
 
-Explanation:
+Explanation:  
     ```bash
     #!/bin/bash   
     ```
