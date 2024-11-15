@@ -12,6 +12,8 @@ ssh rhcsaB
 sudo -i
 ```
 
+~~durchgestrichener Text ~~
+
 1. Display active connection
 ```bash
 nmcli con show --active
