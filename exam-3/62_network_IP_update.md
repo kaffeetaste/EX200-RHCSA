@@ -12,7 +12,7 @@ ssh rhcsaB
 sudo -i
 ```
 
-~~durchgestrichener Text ~~
+<del>durchgestrichener Text </del>
 
 1. Display active connection
 ```bash
