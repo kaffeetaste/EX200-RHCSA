@@ -133,16 +133,16 @@ lvs
 
 </details>
 
-<details> <summary> Note </summray>
+<details> <summary> Note </summray> 
+
     The “-r” or “--resizefs” option is particularly useful as it saves the extra step of running the “resize2fs” command manually to resize the file system.
     To shrink the “mylv” logical volume in “myvg” volume group to 500 megabytes, use the following command:
-
 ```
 lvreduce --resizefs -L 500M myvg/mylv
 ```
-    Shrinking is not supported on a GFS2 or XFS file system.
+Shrinking is not supported on a GFS2 or XFS file system.
 
 Important
-
     If the logical volume you are reducing contains a file system, I recommend using the “--resizefs” option of the “lvreduce” command to prevent data loss. When using this option, the “lvreduce” command tries to reduce the file system before shrinking the logical volume. If it fails, as it can if the file system is full or does not support shrink, the “lvreduce” command will fail and not attempt to shrink the logical volume.
-    </details>
+
+</details>
