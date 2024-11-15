@@ -44,13 +44,15 @@ This line checks if the script received exactly two arguments using the $# speci
     ```
     echo "$2 $1"
     ```
-    If two arguments are provided, this line prints the second argument followed by a space and then the first argument.
+
+If two arguments are provided, this line prints the second argument followed by a space and then the first argument.
 
     ```
     else
     ```
-    If not exactly two arguments are provided, the script displays a usage message and exits with an error code (1).
-    $0: This refers to the script's filename itself.
+If not exactly two arguments are provided, the script displays a usage message and exits with an error code (1).
+$0: This refers to the script's filename itself.
+
 
 
    This script handles errors by informing the user about the expected number of arguments.
