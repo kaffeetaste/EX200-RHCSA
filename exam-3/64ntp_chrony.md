@@ -6,7 +6,7 @@ On ServerB, ensure NTP sync is configured.
 
 <details>
 ```
-ssh rhcsaB
+ssh rhcsaB  
 sudo -i
 ```
 
