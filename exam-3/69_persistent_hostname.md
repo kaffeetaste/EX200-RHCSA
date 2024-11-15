@@ -3,7 +3,7 @@
 #### Question
 On ServerB, change the hostname to rhel.server.test and make it persistent.
 
-<details><summary>#### Solution</summary>
+<details><summary>Solution</summary>
 
 1. To set the hostname of the system to “rhel.server.com”, run:
 ```
