@@ -9,7 +9,7 @@ b) create a 1GiB logical volume named “lvmylv” inside the “vgmyvg” volum
 c) The “lvmylv” logical volume should be formatted with the ext4 filesystem and mounted persistently on the /lvmylv directory.
 d) Extend the ext4 filesystem on “lvmylv” by 500M.
 
-<details><summary> Details a)
+<details><summary> Details a)</summary>
 
 
 1. To list information about all available block devices on the system, run:
