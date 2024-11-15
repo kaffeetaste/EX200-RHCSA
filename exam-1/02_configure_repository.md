@@ -23,6 +23,7 @@ Append the mount command to /etc/fstab to automatically mount the ISO at boot:
 ```
 # echo "/path/to/RHEL-9.iso /mnt iso9660 loop 0 0" >> /etc/fstab
 ```
+    
     Replace /path/to/RHEL-9.iso with the actual location of the ISO file.
 
   <details><summary>Notes</summary>
