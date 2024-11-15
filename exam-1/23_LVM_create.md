@@ -56,8 +56,9 @@ $ sudo pvs
 $ sudo vgcreate myvg /dev/sdb1
 ```
 7. To display information about the volume groups in the LVM (Logical Volume Manager) system, run:
+```
 # vgs
-
+```
 
 Note: Gb vs GB vs GiB
 
