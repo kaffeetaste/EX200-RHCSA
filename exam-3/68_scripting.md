@@ -8,7 +8,9 @@ b. If the argument is 'no', the script should run the command echo "I am sorry t
 c. If the argument is anything else, the script should run the command echo "unknown argument provided".
 
 
-<details> <summary>Solution</summary>
+<details> <summary>Solution</summary>  
+
+
 
 
 
