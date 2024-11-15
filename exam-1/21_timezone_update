@@ -1,17 +1,12 @@
 ### Time zone update
 
 #### Question 6
-
 On ServerA, configure the system time to the "America/New_York" timezone.
 
 
 <details><summary>Solution</summary>
 
 
-```
-$ ssh rhcsaA
-$ sudo -i
-```
 
 
 1. View the current system clock and timezone settings:
