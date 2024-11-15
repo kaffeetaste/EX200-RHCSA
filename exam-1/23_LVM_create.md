@@ -117,8 +117,9 @@ Alternatively, you can extend the logical volume to use a percentage of the rema
 ```
 
 13. To create a new directory “/mylv”, run:
+```
 # mkdir /mylv
-
+```
 14. To permanently mount the new file sstem, add the following line to /Etc/fstab:
 ```
 /dev/mapper/myvg-mylv /mylv ext4 defaults 0 0
