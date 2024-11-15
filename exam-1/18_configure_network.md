@@ -16,6 +16,11 @@ Configure a NetworkManager connection profile named "myprofile1" on ServerA for 
 
 <details><summary>Solution</summary>
 
+```
+ssh rhcsaA
+sudo -i
+```
+
 
 
 1. Create the connection:
@@ -53,7 +58,7 @@ Verification:
 ```
 3. Interface address:
 ```
-# ip address show enp0s3
+# ip address show ens18
 ```
 4. Default gateway:
 ```
