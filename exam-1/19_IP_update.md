@@ -47,7 +47,9 @@ Check if the new IP address is listed in the ipv4.addresses section.
 
 <details><summary>Note</summary>
 To remove the added IP address, use the following command:
+```
 # nmcli connection modify myprofile1 -ipv4.addresses 10.0.0.5/24
-Followed by nmcli connection up myprofile1 or nmcli con reload.
+```
+, followed by nmcli connection up myprofile1 or nmcli con reload.
 </details>
 </details>
