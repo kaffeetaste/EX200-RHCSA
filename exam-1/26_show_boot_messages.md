@@ -36,8 +36,9 @@ $ sudo grubby --update-kernel=/boot/vmlinuz-$(uname -r) --remove-args="rhgb quie
 This change takes effect upon the next system reboot, altering the boot process display and boot message verbosity.
 
 2. Restart the system for the changes to take effect:
+```
 $ sudo reboot
-
+```
 
 Note:
 - The "rhgb" and "quiet" options in the "GRUB_CMDLINE_LINUX" line control the graphical boot display and the verbosity of boot messages.
