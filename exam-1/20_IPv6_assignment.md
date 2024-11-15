@@ -11,8 +11,8 @@ IPv6: fd01::121/64
 
 
 ```
-ssh rhcsaA
-sudo -i
+$ ssh rhcsaA
+$ sudo -i
 ```
 
 
