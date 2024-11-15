@@ -50,7 +50,7 @@ If two arguments are provided, this line prints the second argument followed by 
     ```
     else
     ```
-If not exactly two arguments are provided, the script displays a usage message and exits with an error code (1).
+If not exactly two arguments are provided, the script displays a usage message and exits with an error code (1).  
 $0: This refers to the script's filename itself.
 
 
