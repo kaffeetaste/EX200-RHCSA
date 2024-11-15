@@ -10,12 +10,10 @@ c. If the argument is anything else, the script should run the command echo "unk
 
 <details> <summary>Solution</summary>
 
-1. To open the file “/yes-no.sh” for editing using the vim editor, run:
 
-vim /yes-no.sh
+1. Edit a file "/yes-no.sh" as follows:
 
-2. Add the following lines:
-```
+```bash
     #!/bin/bash
     # check that an argument was provided or exit
     if [ -z $1 ]
@@ -40,9 +38,10 @@ vim /yes-no.sh
     esac
 ```
 
-3. To change the permissions of the file "yes-no.sh" to make it executable by all users (a = all, +x = add execute permission), run:
+2. To change the permissions of the file "yes-no.sh" to make it executable by all users (a = all, +x = add execute permission), run:
+```
 chmod a+x /yes-no.sh
-
+```
 This command allows the script to be run as an executable program.
 
 4. To execute the script “/yes-no.sh” using the sh shell, run:
