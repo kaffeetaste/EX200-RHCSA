@@ -50,8 +50,5 @@ curl http://localhost
 
 <details><summary> Note: </summary>
 Note:
-    To serve over HTTPS, Apache needs to be configured with SSL/TLS. This involves generating or obtaining an SSL certificate and configuring. Apache to use this certificate for HTTPS connections. If Apache isn’t configured to serve over HTTPS (port 443), you’ll get a “Connection refused” .. error when trying to access https://localhost/, even if the firewall is correctly configured.
-    
-    To resolve this issue, you would need to configure SSL for Apache. This typically involves steps like installing mod_ssl, generating or obtaining an SSL certificate,  
-    and configuring your Apache virtual host to use SSL.  
+    To serve over HTTPS, Apache needs to be configured with SSL/TLS. This involves generating or obtaining an SSL certificate and configuring. Apache to use this certificate for HTTPS connections. If Apache isn’t configured to serve over HTTPS (port 443), you’ll get a “Connection refused” .. error when trying to access https://localhost/, even if the firewall is correctly configured. To resolve this issue, you would need to configure SSL for Apache. This typically involves steps like installing mod_ssl, generating or obtaining an SSL certificate,  and configuring your Apache virtual host to use SSL.  
 </details>
