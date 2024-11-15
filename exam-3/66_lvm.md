@@ -133,7 +133,7 @@ lvs
 
 </details>
 
-<details> <summary> Note </summray> 
+<details> <summary> Note </summary> 
 The “-r” or “--resizefs” option is particularly useful as it saves the extra step of running the “resize2fs” command manually to resize the file system.
 To shrink the “mylv” logical volume in “myvg” volume group to 500 megabytes, use the following command:
 
