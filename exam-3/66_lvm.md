@@ -68,6 +68,13 @@ vgs
 
 <details>
 
+hallo
+</details>
+
+
+
+<details>
+
     I used the “-c” option to turn off the DOS-compatible mode, which I recommended while creating partitions. Because DOS does not allow a partition to start (or end) the middle of a cylinder, it assumes the partition table is corrupt when it sees this and won't boot from any partition on the disk.
 
 Note that
