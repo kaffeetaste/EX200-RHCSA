@@ -66,10 +66,10 @@ vgs
 ```
 </details>
 
-<detaails>
+<details><summary> -c Option </summary>
 
 hallo
-</detaails>
+</details>
 
 
 
