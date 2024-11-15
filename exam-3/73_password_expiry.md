@@ -13,8 +13,8 @@ On ServerB, all user passwords should expire after 100 days and be at least 9 ch
 /etc/login.defs: 
 Change PASS_MAX_DAYS to 100
 
-2. To edit the password quality configuration file, edit 
-/etc/security/pwquality.conf:
+2. To edit the password quality configuration file, edit   
+/etc/security/pwquality.conf:  
 Set minlen to 9
 
 </details>
