@@ -14,8 +14,9 @@ Configure a NetworkManager connection profile named "myprofile1" on ServerA for 
     IPv6 DNS Server: fd01::111
     DNS Search Domain: example.com
 
+<details><summary>Solution</summary>
 
-Solution:
+
 
 1. Create the connection:
 ```
