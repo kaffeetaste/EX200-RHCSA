@@ -9,7 +9,7 @@ c. If the argument is anything else, the script should run the command echo "unk
 
 
 <details> <summary>Solution</summary>
-<br>
+<p>
 
 1. Edit a file "/yes-no.sh" as follows:
 
