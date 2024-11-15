@@ -7,6 +7,9 @@ IPv4 gateway: 10.0.0.1
 DNS: 10.2.107.201  
 DNS search domain: phrygix.wz  
 
+var1 = <host>
+
+
 <details>
 
 ```bash
