@@ -4,13 +4,12 @@
 
 On ServerB, use /dev/sdb to do the following:
 
-- create a 4GiB volume group named “vgmyvg”.
-- create a 1GiB logical volume named “lvmylv” inside the “vgmyvg” volume group.
+a) create a 4GiB volume group named “vgmyvg”.
+b) create a 1GiB logical volume named “lvmylv” inside the “vgmyvg” volume group.
+c) The “lvmylv” logical volume should be formatted with the ext4 filesystem and mounted persistently on the /lvmylv directory.
+d) Extend the ext4 filesystem on “lvmylv” by 500M.
 
-The “lvmylv” logical volume should be formatted with the ext4 filesystem and mounted persistently on the /lvmylv directory.
-Extend the ext4 filesystem on “lvmylv” by 500M.
-
-<details>
+<details><summary> Details a)
 
 
 1. To list information about all available block devices on the system, run:
@@ -78,6 +77,8 @@ Note that
 ```
 vgs
 ```
+</details>
+
 
 21. To create a new logical volume named "lvmylv" with a size of 1GiB within the volume group "vgmyvg", run:
 ```
