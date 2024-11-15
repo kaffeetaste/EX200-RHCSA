@@ -23,8 +23,9 @@ sudo -i
 
 
 
-1. Create the connection:
+1. (Show and) create the connection:
 ```
+# nmcli con show
 # nmcli con add con-name myprofile1 ifname ens18 type ethernet
 ```
 2. Set IPv4 and IPv6 settings:
