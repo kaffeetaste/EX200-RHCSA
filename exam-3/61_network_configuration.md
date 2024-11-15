@@ -9,7 +9,8 @@ DNS search domain: phrygix.wz
 
 \# var1 steht für host  
 var1 = \<host\>
-
+neue Zeile\
+noch eine
 
 <details>
 
