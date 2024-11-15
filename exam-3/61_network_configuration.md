@@ -7,15 +7,6 @@ IPv4 gateway: 10.0.0.1
 DNS: 10.2.107.201  
 DNS search domain: phrygix.wz  
 
-\# var1 steht für host  
-
-```
-var1 = \<host\>
-neue Zeile\
-```
-noch eine
-On ServerB, add the following secondary IPV4 address statically to your current running interface. Do this in a way that doesn’t compromise your existing settings: IPV4 additional address: 10.2.125.230/14  
-neue Zeile!!!
 <details>
 
 ```bash
