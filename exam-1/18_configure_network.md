@@ -44,7 +44,7 @@ sudo -i
 ```
 7. Activate the profile:
 ```
-# nmcli connection up myprofile1
+# nmcli con up myprofile1
 ```
 
 Verification:
