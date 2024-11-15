@@ -35,12 +35,12 @@ Explanation:
     ```bash
     #!/bin/bash   
     ```
-
     This line specifies the interpreter to be used for the script (bash in this case).
 
     ```
     if [ $# -eq 2 ]
     ```
+
     This line checks if the script received exactly two arguments using the $# special variable that holds the number of arguments passed.
 
     ```
