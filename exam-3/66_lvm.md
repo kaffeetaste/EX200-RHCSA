@@ -64,7 +64,6 @@ vgcreate vgmyvg /dev/sdb1
 ```
 vgs
 ```
-</details>
 
 <details><summary> Note: -c Option and DOS-compatibility mode </summary>
 I used the “-c” option to turn off the DOS-compatible mode, which I recommended while creating partitions. Because DOS does not allow a partition to start (or end) the middle of a cylinder, it assumes the partition table is corrupt when it sees this and won't boot from any partition on the disk.
@@ -139,6 +138,8 @@ The “-r” option is used to automatically resize the file system to match the
 
 # lvs
 
+
+</details>
 
 Note that
 
