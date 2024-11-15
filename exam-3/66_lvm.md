@@ -66,26 +66,13 @@ vgs
 ```
 </details>
 
-<details><summary> -c Option </summary>
-
-hallo
-</details>
-
-
-
-<details>
-
-    I used the “-c” option to turn off the DOS-compatible mode, which I recommended while creating partitions. Because DOS does not allow a partition to start (or end) the middle of a cylinder, it assumes the partition table is corrupt when it sees this and won't boot from any partition on the disk.
+<details><summary> -c Option and DOS-compatibility mode </summary>
+I used the “-c” option to turn off the DOS-compatible mode, which I recommended while creating partitions. Because DOS does not allow a partition to start (or end) the middle of a cylinder, it assumes the partition table is corrupt when it sees this and won't boot from any partition on the disk.
 
 Note that
     The “-c” option is used to specify the compatibility mode 'dos' or 'nondos'. The default is the nondos mode.
     For backward compatibility, it is possible to use the option without the mode argument; in that case, the default is used.
-
 </details>
-
-Reference
-
-    The “fdisk” man page.
 
 
 Explanation 2
