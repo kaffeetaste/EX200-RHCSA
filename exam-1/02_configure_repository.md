@@ -38,7 +38,7 @@ Copy the '/mnt/media.repo' file to '/etc/yum.repos.d/rhel9.repo' or create a new
 ```
 # cp /mnt/media.repo /etc/yum.repos.d/rhel9.repo
 ```
-    This file defines the repository location and settings.
+This file defines the repository location and settings.
 
 4. Set file permissions:
 
