@@ -32,10 +32,6 @@ This will output "test2 test1" in the terminal.
 
 
 Explanation:  
-    ```
-    #!/bin/bash   
-    ```
-This line specifies the interpreter to be used for the script (bash in this case).
 
     ```
     if [ $# -eq 2 ]
