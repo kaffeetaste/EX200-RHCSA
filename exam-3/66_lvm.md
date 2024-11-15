@@ -5,9 +5,9 @@
 On ServerB, use /dev/sdb to do the following:
 
 a) create a 4GiB volume group named “vgmyvg”.  
-b create a 1GiB logical volume named “lvmylv” inside the “vgmyvg” volume group.  
-c The “lvmylv” logical volume should be formatted with the ext4 filesystem and mounted persistently on the /lvmylv directory.  
-d Extend the ext4 filesystem on “lvmylv” by 500M.  
+b) create a 1GiB logical volume named “lvmylv” inside the “vgmyvg” volume group.  
+c) The “lvmylv” logical volume should be formatted with the ext4 filesystem and mounted persistently on the /lvmylv directory.  
+d) Extend the ext4 filesystem on “lvmylv” by 500M.  
 
 <details><summary> Details a)</summary>
 
