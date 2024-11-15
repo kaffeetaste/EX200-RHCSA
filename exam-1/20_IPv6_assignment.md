@@ -8,6 +8,8 @@ IPv6: fd01::121/64
 
 
 <details><summary>Solution</summary>
+
+
 ```
 ssh rhcsaA
 sudo -i
